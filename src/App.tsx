@@ -1,5 +1,9 @@
+import { GlobalStyle } from "./styles/Global";
+
 export const App = () => {
-  return (
-    <h1>Início do projeto</h1>
-  )
-}
+	return (
+		<GlobalStyle>
+			<h1>ora</h1>
+		</GlobalStyle>
+	);
+};
