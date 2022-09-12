@@ -1,5 +1,5 @@
-import { styled } from "@/styles/stitches.config";
-import { colors } from "@/styles/Global";
+import { styled } from "./stitches.config";
+import { colors } from "./Global";
 
 export const Button = styled("button", {
 	height: "3rem",
