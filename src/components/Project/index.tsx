@@ -11,7 +11,7 @@ import { Text } from "../../styles/Text";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
 import { userData } from "../../utils/userData";
-import { api } from "services";
+import { api } from "../../services/index";
 
 interface RepositoriesType {
 	id: number;
