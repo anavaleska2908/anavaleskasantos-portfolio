@@ -1,9 +1,9 @@
-import { userData } from "@/utils/userData";
+import { userData } from "../../utils/userData";
 import { useMedia } from "use-media";
 import { useState } from "react";
-import { Button } from "@/styles/Button";
-import { Container } from "@/styles/Global";
-import { FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
+import { Button } from "../../styles/Button";
+import { Container } from "../../styles/Global";
+import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import {
 	NavbarWrapper,
@@ -18,7 +18,7 @@ export interface MenuButtonOpen {
 	setOpen: (value: Boolean) => void;
 }
 
-export const Navbar = () => {
+export const Navbar = (): JSX.Element => {
 	const isWide = useMedia({ maxWidth: "991px" });
 
 	document.title = userData.nameUser;

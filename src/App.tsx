@@ -1,9 +1,10 @@
+import { Navbar } from "./components/Navbar";
 import { GlobalStyle } from "./styles/Global";
 
-export const App = () => {
+export const App = (): JSX.Element => {
 	return (
 		<GlobalStyle>
-			<h1>ora</h1>
+			<Navbar />
 		</GlobalStyle>
 	);
 };
