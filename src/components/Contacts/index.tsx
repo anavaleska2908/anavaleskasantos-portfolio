@@ -27,16 +27,12 @@ export const Contacts = () => {
 				<ContactSectionContent ref={ref}>
 					<motion.div style={{ opacity: scrollYProgress }}>
 						<ContactSectionText>
-							<Text type="heading2" color="grey4">
-								Let's set up a conversation and &nbsp;
-								<Text as="span" type="heading2" color="brand1">
-									develop our creativity &nbsp;
+							<Text type="heading2" css={{ color: "$grey4" }}>
+								Vamos marcar pra conversar e &nbsp;
+								<Text as="span" type="heading2" css={{ color: "$brand1" }}>
+								construir algo&nbsp;
 								</Text>
-								together?
-							</Text>
-							<Text color="grey2" type="body1">
-								Advertise your brand organically within
-								Dribbble&u2019s;s design inspiration feed.
+								juntos?
 							</Text>
 						</ContactSectionText>
 					</motion.div>
@@ -46,21 +42,20 @@ export const Contacts = () => {
 								<FaWhatsapp color="#fff" size={24} />
 							</ContactCardImage>
 							<ContactCardContent>
-								<Text type="heading4" color="grey4">
-									My Whatsapp
+								<Text type="heading4" css={{ color: "$grey4" }}>
+									Meu whats
 								</Text>
-								<Text color="grey2" type="body2">
-									I'm available for a voice chat, let's about
-									creativity together?
+								<Text  css={{ color: "$grey2" }} type="body2">
+									Podemos nos ligar para conversar.
 								</Text>
 								<Text
 									as="a"
-									color="grey2"
+									css={{ color: "$grey2" }}
 									type="body2"
 									target="_blank"
 									href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
 								>
-									Talk Now
+									Clique para me mandar uma mensagem ou ligar.
 								</Text>
 							</ContactCardContent>
 						</ContactCard>
@@ -70,21 +65,20 @@ export const Contacts = () => {
 								<FaEnvelopeOpen color="#fff" size={24} />
 							</ContactCardImage>
 							<ContactCardContent>
-								<Text type="heading4" color="grey4">
-									My email
+								<Text type="heading4" css={{ color: "$grey4" }}>
+									Meu Gmail
 								</Text>
-								<Text color="grey2" type="body2">
-									Send me an email reporting feedbacks,
-									suggestions and ideas
+								<Text css={{ color: "$grey2" }} type="body2">
+									Me envie um email com feedbacks, sugestões e/ou ideias. Fique a vontade!
 								</Text>
 								<Text
 									as="a"
-									color="grey2"
+									css={{ color: "$grey2" }}
 									type="body2"
 									target="_blank"
 									href={`mailto=${userData.emailUser}`}
 								>
-									Send email now
+									Clique para me mandar um email.
 								</Text>
 							</ContactCardContent>
 						</ContactCard>
@@ -93,21 +87,21 @@ export const Contacts = () => {
 								<FaLinkedin color="#fff" size={24} />
 							</ContactCardImage>
 							<ContactCardContent>
-								<Text type="heading4" color="grey4">
-									My LinkedIn
+								<Text type="heading4"  css={{ color: "$grey4" }}>
+									Meu LinkedIn
 								</Text>
-								<Text color="grey2" type="body2">
-									We can create more constant interactions as
-									well as a sharing network
+								<Text css={{ color: "$grey2" }} type="body2">
+									Acompanhe minha rede profissional. Nela podemos ter
+									interações mais constantes e compartilhar network.
 								</Text>
 								<Text
 									as="a"
-									color="grey2"
+									css={{ color: "$grey2" }}
 									type="body2"
 									target="_blank"
 									href={userData.linkedinUser}
 								>
-									Go to Telegram Now
+									Acesse minha página do Linkedin!
 								</Text>
 							</ContactCardContent>
 						</ContactCard>

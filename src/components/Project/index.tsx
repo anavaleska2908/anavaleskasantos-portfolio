@@ -44,30 +44,29 @@ export const Project = (): JSX.Element => {
 					<ProjectTitle
 						as="h2"
 						type="heading3"
-						css={{ marginBotton: "$3" }}
-						color="grey4"
+						css={{ color: "$grey4", marginBotton: "$3" }}
 					>
 						{repository.name}
 					</ProjectTitle>
 					<ProjectStack>
-						<Text type="body2" color="grey2">
+						<Text type="body2" css={{ color: "$grey2"}}>
 							Linguagem:
 						</Text>
 						{repository.language ? (
 							<ProjectStackTech>
-								<Text color="grey2" type="body2">
+								<Text css={{ color: "$grey2"}} type="body2">
 									{repository.language}
 								</Text>
 							</ProjectStackTech>
 						) : (
 							<ProjectStackTech>
-								<Text color="grey2" type="body2">
-									Not identified
+								<Text css={{ color: "$grey2"}} type="body2">
+									Não identificada
 								</Text>
 							</ProjectStackTech>
 						)}
 					</ProjectStack>
-					<Text type="body1" color="grey2">
+					<Text type="body1" css={{ color: "$grey2"}}>
 						{repository.description?.substring(0, 129)}
 					</Text>
 					<ProjectLinks>
