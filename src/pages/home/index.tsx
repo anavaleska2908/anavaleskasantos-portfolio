@@ -7,7 +7,6 @@ import { Contacts } from "../../components/Contacts";
 import { stackData } from "../../utils/stackData";
 import { userData } from "../../utils/userData";
 import { FaGithub } from "react-icons/fa";
-import { HandEffect } from "../../components/HandEffect";
 import {
 	Header,
 	HeaderContent,
@@ -34,25 +33,25 @@ export const Home = (): JSX.Element => {
 								width={"48px"}
 								height={"48px"}
 							/>
-							<Text color="grey4" css={{ marginLeft: "$2" }}>
-								Hello, my name is {userData.nameUser} &nbsp;
-								<HandEffect />
+							<Text css={{ marginLeft: "$2", color: "$grey4" }}>
+								Olá, meu nome é {userData.nameUser} &nbsp;
+								✋
 							</Text>
 						</Flex>
-						<Text as="h1" type="heading1" color="grey5">
-							I &nbsp;
-							<Text as="span" type="heading1" color="brand1">
-								love
+						<Text as="h1" type="heading1" css={{ color: "$grey5" }}>
+							Eu
+							<Text as="span" type="heading1" css={{ color: "$brand1" }}>
+							&nbsp;amo&nbsp;
 							</Text>
-							&nbsp; creating and &nbsp;
-							<Text as="span" type="heading1" color="brand1">
-								developing
+							planejar e&nbsp; 
+							<Text as="span" type="heading1" css={{ color: "$brand1" }}>
+								desenvolver
 							</Text>
-							&nbsp; projects
+							&nbsp;projetos.
 						</Text>
-						<Text type="body1" color="grey2">
-							Discover here in this environment, created
-							especially for you, all my projects and technologies
+						<Text type="body1" css={{ color: "$grey2" }}>
+							Acompanhe por aqui todos os meus projetos e tecnologias. 
+							Este portfólio foi criado especialmente para você, espero que goste!
 						</Text>
 						<HeaderButtonsArea>
 							<Button
@@ -60,7 +59,7 @@ export const Home = (): JSX.Element => {
 								type="buttonPrimary"
 								href="#projects"
 							>
-								See Projects
+								Veja meus projetos
 							</Button>
 							<Button
 								as="a"
@@ -87,14 +86,15 @@ export const Home = (): JSX.Element => {
 				<Container>
 					<ProjectAreaWrapperColumns>
 						<ProjectsAreaSocialMediaMessage>
-							<Text as="h2" type="heading4" color="grey4">
-								My projects
+							<Text as="h2" type="heading4" css={{ color: "$grey4" }}>
+								Meus projetos:
 							</Text>
-							<Text as="p" type="body1" color="grey2">
-								Projects created at &nbsp;
-								<Text as="span" color="brand5">
+							<Text as="p" type="body1" css={{ color: "$grey2" }}>
+								Projetos pessoais, desafios técnicos ou criados na&nbsp;
+								<Text as="span" css={{ color: "$brand5" }}>
 									Kenzie Academy
 								</Text>
+								:
 							</Text>
 						</ProjectsAreaSocialMediaMessage>
 						<ProjectsAreaContent>

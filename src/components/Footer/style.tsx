@@ -1,6 +1,6 @@
 import { styled } from "../../styles/stitches.config";
 import { Container, Flex } from "../../styles/Global";
-import dots from "../../../public/static/img/background/dots.svg";
+import dots from "../../public/static/img/background/dots.svg";
 
 export const FooterWrapper = styled("footer", {
 	backgroundColor: "$grey0",

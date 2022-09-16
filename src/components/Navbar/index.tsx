@@ -46,7 +46,7 @@ export const Navbar = (): JSX.Element => {
 						</Button>
 					)}
 				</NavbarMobileArea>
-				{isWide ? open && <NavbarLinks /> : <NavbarLinks />}
+				{isWide ? open && <NavLinks /> : <NavLinks />}
 			</Container>
 		</NavbarWrapper>
 	);
@@ -55,22 +55,22 @@ export const Navbar = (): JSX.Element => {
 export const NavLinks = (): JSX.Element => {
 	return (
 		<NavbarLinks>
-			<Button type="buttonLink" as="a" color="grey4" href={`#home`}>
-				Home
+			<Button type="buttonLink" as="a" css={{ color: "$grey4"}} href={`#home`}>
+				Sobre
 			</Button>
-			<Button type="buttonLink" as="a" color="grey4" href={`#projects`}>
-				Projects
+			<Button type="buttonLink" as="a" css={{ color: "$grey4"}} href={`#projects`}>
+				Projetos
 			</Button>
-			<Button type="buttonLink" as="a" color="grey4" href={`#contact`}>
-				Contact
+			<Button type="buttonLink" as="a" css={{ color: "$grey4"}} href={`#contact`}>
+				Contato
 			</Button>
 			<Button
 				type="buttonLink"
 				as="a"
-				color="grey4"
+				css={{ color: "$grey4"}}
 				href={`#social-media`}
 			>
-				Social Media
+				Redes Sociais
 			</Button>
 		</NavbarLinks>
 	);
